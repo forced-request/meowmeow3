@@ -1,0 +1,12 @@
+name: "Grumble, Grumble"
+
+on:
+  pull_request_target:
+    types: edited
+
+jobs:
+  steal-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - name: just a test
+        run: echo "heyyyy"
